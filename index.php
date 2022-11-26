@@ -1,12 +1,21 @@
+<?php
+/*
+*This templete is for displaying the header
+*/
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php language_attributes(); ?>" class= "no-js">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
     
+
+
+<?php wp_footer(); ?>
 </body>
 </html>
